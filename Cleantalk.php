@@ -505,4 +505,9 @@ class Cleantalk
 
         return $this->httpRequest($msg);
     }
+
+    public static function getLockPageFile()
+    {
+        return __FILE__ . '/lock-page-ct-die.html';
+    }
 }
