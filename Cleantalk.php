@@ -2,7 +2,7 @@
 
 namespace Cleantalk\Common\Antispam;
 
-use Cleantalk\Common\Helper;
+use Cleantalk\Common\Helper\Helper;
 use Cleantalk\Common\Http\Request;
 
 /**
