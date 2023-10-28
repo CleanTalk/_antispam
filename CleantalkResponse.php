@@ -136,8 +136,8 @@ class CleantalkResponse
         $this->errno  = isset($obj->errno) ? $obj->errno : 0;
         $this->errstr = isset($obj->errstr) ? preg_replace("/.+(\*\*\*.+\*\*\*).+/", "$1", htmlspecialchars($obj->errstr)) : null;
 
-        $this->stop_words     = isset($obj->stop_words) ? utf8_decode($obj->stop_words) : null;
-        $this->comment        = isset($obj->comment) ? strip_tags(utf8_decode($obj->comment), '<p><a><br>') : null;
+        $this->stop_words     = isset($obj->stop_words) ? mb_convert_encoding($obj->stop_words, 'ISO-8859-1', 'UTF-8') : null;
+        $this->comment        = isset($obj->comment) ? strip_tags(mb_convert_encoding($obj->comment, 'ISO-8859-1', 'UTF-8'), '<p><a><br>') : null;
         $this->blacklisted    = isset($obj->blacklisted) ? $obj->blacklisted : null;
         $this->allow          = isset($obj->allow) ? $obj->allow : 1;
         $this->id             = isset($obj->id) ? $obj->id : null;
