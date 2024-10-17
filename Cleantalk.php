@@ -3,7 +3,7 @@
 namespace Cleantalk\Common\Antispam;
 
 use Cleantalk\Common\Helper\Helper;
-use Cleantalk\Common\Http\Request;
+use Cleantalk\Common\Mloader\Mloader;
 
 /**
  * Cleantalk base class
@@ -462,7 +462,9 @@ class Cleantalk
             $url .= $this->api_version;
         }
 
-        $http = new Request();
+        /** @var \Cleantalk\Common\Http\Request $request_class */
+        $request_class = Mloader::get('Request');
+        $http = new $request_class();
 
         $result = $http->setUrl($url)
             ->setData($data)

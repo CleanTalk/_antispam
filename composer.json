@@ -12,7 +12,8 @@
   "require": {
     "cleantalk/apbct-installer": "*",
     "cleantalk/http": "*",
-    "cleantalk/helper": "*"
+    "cleantalk/helper": "*",
+    "cleantalk/mloader": "*"
   },
   "require-dev": {
     "vimeo/psalm": "^4.8",
