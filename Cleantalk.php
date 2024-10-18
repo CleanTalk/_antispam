@@ -463,7 +463,7 @@ class Cleantalk
         }
 
         /** @var \Cleantalk\Common\Http\Request $request_class */
-        $request_class = Mloader::get('Request');
+        $request_class = Mloader::get('Http\Request');
         $http = new $request_class();
 
         $result = $http->setUrl($url)
