@@ -13,7 +13,8 @@
     "cleantalk/apbct-installer": "*",
     "cleantalk/http": "*",
     "cleantalk/helper": "*",
-    "cleantalk/mloader": "*"
+    "cleantalk/mloader": "*",
+    "cleantalk/cleaner": "*"
   },
   "require-dev": {
     "vimeo/psalm": "^4.8",
