@@ -35,5 +35,10 @@
       "vendor/bin/psalm --no-cache --config=tests/psalm.xml",
       "vendor/bin/psalm --no-cache --config=tests/psalm.xml --taint-analysis"
     ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Cleantalk\\Common\\Antispam\\": "/"
+    }
   }
 }
