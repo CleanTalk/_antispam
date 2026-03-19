@@ -9,7 +9,6 @@
   ],
   "license": "GPL-3.0-or-later",
   "require": {
-    "cleantalk/apbct-installer": "*",
     "cleantalk/http": "*",
     "cleantalk/helper": "*",
     "cleantalk/mloader": "*",
@@ -23,8 +22,8 @@
   },
   "config": {
     "allow-plugins": {
-      "cleantalk/apbct-installer": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "cleantalk/apbct-installer": false
     }
   },
   "scripts": {
